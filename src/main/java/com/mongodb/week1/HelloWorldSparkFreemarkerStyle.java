@@ -1,4 +1,4 @@
-package com.mongodb;
+package com.mongodb.week1;
 
 import freemarker.template.Configuration;
 import freemarker.template.Template;
