@@ -7,6 +7,9 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <artifactId>MongoDB</artifactId>
+
+    <name>MongoDB</name>
+
     <packaging>pom</packaging>
 
     <modules>
