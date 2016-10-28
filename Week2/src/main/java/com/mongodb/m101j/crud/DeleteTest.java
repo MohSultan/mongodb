@@ -41,6 +41,7 @@ public class DeleteTest {
             collection.insertOne(new Document().append("_id", i));
         }
 
+        collection.deleteMany(gt("_id", 5));
         collection.deleteOne(eq("_id", 4));
 
         for (Document cur : collection.find().into(new ArrayList<Document>())) {
