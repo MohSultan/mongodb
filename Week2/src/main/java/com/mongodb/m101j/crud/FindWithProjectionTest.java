@@ -55,7 +55,10 @@ public class FindWithProjectionTest {
 
         Bson filter = and(eq("x", 0), gt("y", 10), lt("y", 90));
 
-//        Bson projection = new Document("y", 1).append("i", 1).append("_id", 0);
+//        Bson projection = new Document("y", 1).append("i", 1).append("_id", 0).append("x",0);
+//        Bson projection = Projections.exclude("x", "_id");
+//        Bson projection = Projections.include("x", "i");
+//To include and exclude in the same time
         Bson projection = fields(include("y", "i"), excludeId());
 
         List<Document> all = collection.find(filter)
