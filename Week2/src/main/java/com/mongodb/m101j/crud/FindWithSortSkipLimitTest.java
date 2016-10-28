@@ -51,8 +51,17 @@ public class FindWithSortSkipLimitTest {
         }
 
         Bson projection = fields(include("i", "j"), excludeId());
+
+        //Sort asc by x
+        Bson sort1 = new Document("i", 1);
+        Bson sort2 = Sorts.ascending("i");
+        //Sort asc by x and J desc
+        Bson sort3 = new Document("i", 1).append("j", -1);
+        Bson sort4 = orderBy(ascending("i"), descending("j"));
+
         Bson sort = descending("j", "i");
 
+        //including limit and skip
         List<Document> all = collection.find()
                                        .projection(projection)
                                        .sort(sort)
