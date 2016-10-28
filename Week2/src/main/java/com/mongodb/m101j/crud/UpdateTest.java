@@ -55,6 +55,8 @@ public class UpdateTest {
 //                                                             new Document("x", 20)
 //                                                                     .append("updated", true)));
 //
+//collection.updateOne(eq("x", 5), set("x", 20));
+
 //        collection.updateOne(eq("x", 5), combine(set("x", 20), set("updated", true)));
 //
 //
