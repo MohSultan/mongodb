@@ -41,12 +41,15 @@ public class InsertTest {
                          .append("profession", "hacker");
 
         printJson(smith);
+//Document is displayed without _id
 
         coll.insertOne(smith);
         coll.insertOne(jones);
 
+
         printJson(smith);
         printJson(jones);
+//        Document is displayed With _id because the driver took care of it.
 
         coll.drop();
 
