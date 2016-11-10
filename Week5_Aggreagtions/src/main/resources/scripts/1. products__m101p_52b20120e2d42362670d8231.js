@@ -1,6 +1,6 @@
 
-use agg
-db.products.drop()
+use agg;
+db.products.drop();
 
 db.products.insert({'name':'iPad 16GB Wifi', 'manufacturer':"Apple", 
 		    'category':'Tablets', 

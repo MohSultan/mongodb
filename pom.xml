@@ -13,8 +13,8 @@
         <module>Week1</module>
         <module>Week2</module>
         <module>Week2_HW</module>
+        <module>Week3/blog-accepting-posts-and-comments-m101j/blog_accepting_posts_and_comments</module>
         <module>Week4/m101j-blog-indexes/m101j-blog-indexes</module>
         <module>Week5_Aggreagtions</module>
-        <module>Week3/blog-accepting-posts-and-comments-m101j/blog_accepting_posts_and_comments</module>
     </modules>
 </project>
