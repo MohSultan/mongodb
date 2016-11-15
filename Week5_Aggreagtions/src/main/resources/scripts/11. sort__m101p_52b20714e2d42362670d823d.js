@@ -22,10 +22,7 @@ db.zips.aggregate([
      {
 	 population:-1
      }
-    }
-      
-    
-     
+            }
 ])
 
 
