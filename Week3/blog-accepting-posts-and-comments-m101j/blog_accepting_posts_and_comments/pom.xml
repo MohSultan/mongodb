@@ -8,6 +8,8 @@
     <artifactId>Week3</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <name>Week3_SchemaDesign</name>
+
     <dependencies>
         <dependency>
             <groupId>org.mongodb</groupId>
